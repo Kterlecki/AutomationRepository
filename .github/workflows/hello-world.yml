@@ -1,12 +1,11 @@
 name: Run Hello-world app
-on: workflow_dispatch
+on:
+  workflow_dispatch
 
 jobs:
-  Run-Hello-World
+  Run-Hello-World:
     name: Run App
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: Run helloworld
         run: ls
-
-
