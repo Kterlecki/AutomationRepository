@@ -8,5 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run helloworld
-        run: |
-          ls
+        run: app/Git-Actions-Practise  
