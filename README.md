@@ -1,7 +1,8 @@
 # AutomationRepository
-
+- This repository will hold different automation tools that I developed
+- 
 # Scripts
-
+-
 ## Dotnet Project Builder
 - Bash script to clone a repository down to your local Computer
 - It will install a working dotnet project
