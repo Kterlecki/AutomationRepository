@@ -19,11 +19,11 @@ dotnetProjectBuilder(){
 
     git clone "$github_project_name"
     cd "$project_name"
-    dotnet new "$project_type" -o src/ --name "$project_name"
-    dotnet new xunit -o test/ --name "$project_name"Test
+    dotnet new "$project_type" -o "src/"$project_name"/" --name "$project_name"
+    dotnet new xunit -o "test/"$project_name"/" --name "$project_name"Test
     dotnet new sln --name "$project_name"
     dotnet sln add **/*.csproj
-    dotnet add "test/"$project_name"Test.csproj" reference "src/$project_name.csproj"
+    dotnet add "test/**/"$project_name"Test.csproj" reference "src/**/$project_name.csproj"
     dotnet sln list
 }
 
