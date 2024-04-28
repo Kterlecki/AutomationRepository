@@ -1,6 +1,6 @@
 name: Build Run Docker
 on:
-  push:
+  push: [main]
 pull_request:
 
 jobs:
@@ -14,4 +14,3 @@ jobs:
         run: docker build -t docker-gha .
       -name: run docker image
         run: docker run docker-gha
-        
