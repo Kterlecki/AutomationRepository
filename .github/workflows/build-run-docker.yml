@@ -1,7 +1,6 @@
 name: Build Run Docker
 on:
-  push: [main]
-pull_request:
+  push: 
 
 jobs:
   Build-Run-Docker:
